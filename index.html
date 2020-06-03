@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css?family=Flamenco&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>My Restaurant</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="row clearfix">
+                <img src="./assets/logo_transparent.png" class="logo">
+                <ul class="main-nav animated slideInDown" id="check-class">
+                    <li><a href="#">Home Delivery</a></li>
+                    <li><a href="#">How to Order</a></li>
+                    <li><a href="#">Check More</a></li>
+                    <li><a href="#">Sign Up</a></li>
+                </ul>
+                <a href="#" class="toggle-bar" onclick="slideshow()"><i class="fa fa-bars"></i></a>
+            </div>
+        </nav>
+        <div class="main-content-header">
+            <h1>Welcome to <span class="colorchange">LA-KIT</span>.<br> House of food lovers!</h1>
+            <a href="#" class="btn btn-one">Click to Order</a>
+            <a href="#" class="btn btn-two">Show More</a>
+        </div>
+    </header>
+
+    <script>
+        function slideshow(){
+            var x= document.getElementById('check-class');
+            if(x.style.display==="none"){
+                x.style.display="block";
+            }
+            else{
+                x.style.display="none";
+            }
+        }
+    </script>
+</body>
+</html>
